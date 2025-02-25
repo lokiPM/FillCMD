@@ -1,0 +1,5 @@
+name: FillCMD
+version: 1.0
+main: lokiPM\FillCMD\Main
+api: 5.0.0
+src-namespace-prefix: lokiPM\FillCMD
