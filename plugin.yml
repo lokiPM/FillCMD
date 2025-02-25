@@ -3,3 +3,13 @@ version: 1.0.0
 main: lokiPM\FillCMD\Main
 api: 5.0.0
 src-namespace-prefix: lokiPM\FillCMD
+
+commands:
+  fill:
+    description: Fill selected permissions with blocks.
+    permission: fillcmd.use
+
+permissions:
+  fillcmd.use:
+    description: Allows the player to use the /fill command.
+    default: op
