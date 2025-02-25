@@ -9,10 +9,11 @@ use pocketmine\utils\TextFormat;
 use pocketmine\level\Level;
 use pocketmine\block\Block;
 use pocketmine\Player;
+use pocketmine\math\Vector3;
 
 class Main extends PluginBase {
 
-    public function onEnable(){
+    public function onEnable() : void {
         $this->getLogger()->info("FillCMD Plugin has been enabled.");
     }
 
@@ -34,7 +35,7 @@ class Main extends PluginBase {
             }
 
             list($x1, $y1, $z1, $x2, $y2, $z2, $blockName) = $args;
-            $level = $sender->getLevel();
+            $level = $sender->getWorld();
 
             $block = Block::fromString($blockName);
             if($block === null){
